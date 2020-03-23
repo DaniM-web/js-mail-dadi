@@ -4,18 +4,14 @@ var mailYes = ["ciao@bello.it","ciaone@bello.it","ciauzzo@bello.it"];
 var mailAsk = prompt("Inserisci qui la tua mail");
 
 var mailI;
-var msg;
+var msg = "La tua Mail non è stata rilevata dai nostri sistemi. Accesso negato";
 
 for(var i= 0; i < mailYes.length; i++){
   mailI = mailYes[i];
   // console.log(mailI);
   if(mailI == mailAsk){
     console.log("L'email " + mailI +  "è corretta");
-    msg = "Email giusta"
-  }
-  else{
-    console.log("L'email è sbagliata");
-    msg = "Email sbagliata"
+    msg = "La tua Mail " + mailI + " è stata rilevata dai nostri sistemi";
   }
 
 }
